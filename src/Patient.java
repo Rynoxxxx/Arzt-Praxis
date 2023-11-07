@@ -23,7 +23,7 @@ public class Patient {
     public void setName(String pName){
         name=pName;
     }
-
+//hgfhgf
     public void setVorname(String pVorname){
         vorname=pVorname;
     }
