@@ -23,9 +23,19 @@ public class Patient {
     public void setName(String pName){
         name=pName;
     }
-//hgfhgf
+
     public void setVorname(String pVorname){
         vorname=pVorname;
     }
 
+    public void setNachfolger(Patient pNachfolger) {
+        nachfolger=pNachfolger;
+
+        if(nachfolger == null){
+            nachfolger=pNachfolger;
+        }
+        while (nachfolger!=null){
+            nachfolger.setNachfolger(pNachfolger);
+        }
+    }
 }
