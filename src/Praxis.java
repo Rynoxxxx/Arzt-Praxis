@@ -22,8 +22,9 @@ public class Praxis {
             @Override
             public void actionPerformed(ActionEvent e) {
                 aufnehmen();
-
-                nextPatient.setText(nachnameText.getText()+","+" "+nameText.getText());
+                nachnameText.setText("");
+                nameText.setText("");
+                nextPatient.setText(erster.getName()+", "+erster.getVorname());
 
             }
         });
@@ -31,8 +32,16 @@ public class Praxis {
             @Override
             public void actionPerformed(ActionEvent e) {
             aufrufen();
-            nextPatient.setText(erster.getNachfolger().getName()+" "+erster.getNachfolger().getVorname());
-            erster=erster.getNachfolger();
+            nachnameText.setText("");
+            nameText.setText("");
+            if(erster!=null) {
+
+
+                nextPatient.setText(erster.getName()+", "+erster.getVorname());
+            }
+            else{
+                nextPatient.setText("");
+            }
             }
 
         });
@@ -54,8 +63,9 @@ public class Praxis {
 
     public Patient aufrufen() {
         if (erster != null) {
-
-            return erster;
+            Patient temp=erster;
+            erster=erster.getNachfolger();
+            return temp;
         }
 
         return null;
@@ -72,4 +82,7 @@ public class Praxis {
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
     }
+
+
+
 }
