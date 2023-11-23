@@ -6,26 +6,36 @@ public class Praxis {
 
     Patient erster;
 
+    Queue <Patient>bSchlange;
+    Queue <Patient>aSchlange;
     private JPanel arzt;
     private JTextField nameText;
     private JTextField nachnameText;
     private JButton aufnehmenButton;
-    private JTextField nextPatient;
+    private JTextField nextPatientA;
     private JButton aufrufenButton;
     private JLabel name;
     private JLabel nachname;
     private JLabel patient2;
+    private JCheckBox arztCheckBox;
+    private JCheckBox blutCheckBox;
+    private JTextField nextPatientB;
+    private JCheckBox blutListeCheckBox;
+    private JCheckBox arztListeCheckBox;
 
     public Praxis(){
+
+        aSchlange= new Queue<Patient>();
+        bSchlange= new Queue<Patient>();
 
         aufnehmenButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 aufnehmen();
+
+                nextPatientA.setText(nachnameText.getText()+", "+nameText.getText());
                 nachnameText.setText("");
                 nameText.setText("");
-                nextPatient.setText(erster.getName()+", "+erster.getVorname());
-
             }
         });
         aufrufenButton.addActionListener(new ActionListener() {
@@ -34,14 +44,14 @@ public class Praxis {
             aufrufen();
             nachnameText.setText("");
             nameText.setText("");
-            if(erster!=null) {
+            /*if(erster!=null) {
 
 
-                nextPatient.setText(erster.getName()+", "+erster.getVorname());
+                nextPatientA.setText(erster.getName()+", "+erster.getVorname());
             }
             else{
-                nextPatient.setText("");
-            }
+                nextPatientA.setText("");
+            }*/
             }
 
         });
@@ -49,25 +59,39 @@ public class Praxis {
     }
     public void aufnehmen() {
         Patient pPatient=new Patient(nachnameText.getText(),nameText.getText());
-        if (erster == null) {
+        if (blutCheckBox.isSelected()){
+            bSchlange.enqueue(pPatient);
+            nextPatientB.setText(bSchlange.front().getName()+", "+bSchlange.front().getVorname());
+
+        }
+        if (arztCheckBox.isSelected()){
+            aSchlange.enqueue(pPatient);
+            nextPatientA.setText(aSchlange.front().getName()+", "+aSchlange.front().getVorname());
+        }
+
+        /*if (erster == null) {
             erster = pPatient;
         }else{
             erster.setNachfolger(pPatient);
         }
         if (erster != null) {
-            nextPatient.setText(erster.getName()+","+" "+erster.getVorname());
+            nextPatientA.setText(erster.getName()+","+" "+erster.getVorname());
         }else {
-            nextPatient.setText("");
-        }
+            nextPatientA.setText("");
+        }*/
     }
 
     public Patient aufrufen() {
-        if (erster != null) {
+        if(blutListeCheckBox.isSelected()){
+
+        }
+        /*if (erster != null) {
             Patient temp=erster;
             erster=erster.getNachfolger();
             return temp;
         }
 
+        return null;*/
         return null;
     }
 

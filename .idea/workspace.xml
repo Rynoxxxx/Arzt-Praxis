@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e482a785-40e1-4889-9923-158375e3ea71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/arztPraxis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aufnehmenButton2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aufrufenButton.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Praxis.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Praxis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wartezimmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wartezimmer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +29,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2XqaZoevKVj2jLp3DiEvYhlszDE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,6 +47,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samuel.stroot\IdeaProjects\Arzt-Praxis\src" />
       <recent name="C:\Users\samue\IdeaProjects\Arzt-Praxis\src" />
     </key>
   </component>

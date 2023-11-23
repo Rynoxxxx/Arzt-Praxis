@@ -16,9 +16,9 @@ public class Patient {
         return vorname;
     }
 
-    Patient getNachfolger(){
+    /*Patient getNachfolger(){
         return nachfolger;
-    }
+    }*/
 
     public void setName(String pName){
         name=pName;
@@ -28,11 +28,11 @@ public class Patient {
         vorname=pVorname;
     }
 
-    public void setNachfolger(Patient pNachfolger) {
+    /*public void setNachfolger(Patient pNachfolger) {
         if(nachfolger == null){
             nachfolger=pNachfolger;
         }else{
             nachfolger.setNachfolger(pNachfolger);
         }
-    }
+    }*/
 }
