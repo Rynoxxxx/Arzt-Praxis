@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e482a785-40e1-4889-9923-158375e3ea71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Praxis.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Praxis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,6 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\samuel.stroot\IdeaProjects\Arzt-Praxis\src" />
       <recent name="C:\Users\samue\IdeaProjects\Arzt-Praxis\src" />
     </key>
   </component>

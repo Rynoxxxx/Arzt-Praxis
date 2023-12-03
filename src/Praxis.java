@@ -31,11 +31,16 @@ public class Praxis {
         aufnehmenButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                aufnehmen();
+                String nachname = nachnameText.getText();
+                String name = nameText.getText();
+                if(nachname.matches("^[A-Za-z]+$") && name.matches("^[A-Za-z]+$")){
+                    aufnehmen();
+                    nachnameText.setText("");
+                    nameText.setText("");
+                }
 
-                nextPatientA.setText(nachnameText.getText()+", "+nameText.getText());
-                nachnameText.setText("");
-                nameText.setText("");
+                //nextPatientA.setText(nachnameText.getText()+", "+nameText.getText());
+
             }
         });
         aufrufenButton.addActionListener(new ActionListener() {
@@ -62,11 +67,12 @@ public class Praxis {
         if (blutCheckBox.isSelected()){
             bSchlange.enqueue(pPatient);
             nextPatientB.setText(bSchlange.front().getName()+", "+bSchlange.front().getVorname());
-
+            blutCheckBox.setSelected(false);
         }
         if (arztCheckBox.isSelected()){
             aSchlange.enqueue(pPatient);
             nextPatientA.setText(aSchlange.front().getName()+", "+aSchlange.front().getVorname());
+            arztCheckBox.setSelected(false);
         }
 
         /*if (erster == null) {
@@ -83,7 +89,18 @@ public class Praxis {
 
     public Patient aufrufen() {
         if(blutListeCheckBox.isSelected()){
-
+        bSchlange.dequeue();
+        if (!bSchlange.isEmpty()){
+            nextPatientB.setText(bSchlange.front().getName()+", "+bSchlange.front().getVorname());
+        }else nextPatientB.setText("");
+        blutListeCheckBox.setSelected(false);
+        }
+        if(arztListeCheckBox.isSelected()){
+            aSchlange.dequeue();
+            if (!aSchlange.isEmpty()){
+                nextPatientA.setText(aSchlange.front().getName()+", "+aSchlange.front().getVorname());
+            }else nextPatientA.setText("");
+            arztListeCheckBox.setSelected(false);
         }
         /*if (erster != null) {
             Patient temp=erster;
