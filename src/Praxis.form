@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Praxis">
-  <grid id="27dc6" binding="arzt" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="arzt" layout-manager="GridLayoutManager" row-count="12" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="568" height="463"/>
+      <xy x="20" y="20" width="1044" height="605"/>
     </constraints>
     <properties>
       <background color="-16724737"/>
@@ -22,7 +22,7 @@
     <children>
       <component id="14ea0" class="javax.swing.JTextField" binding="nameText">
         <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -30,7 +30,7 @@
       </component>
       <component id="b836a" class="javax.swing.JLabel" binding="name">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Arial Black" size="16" style="1"/>
@@ -39,7 +39,7 @@
       </component>
       <component id="2ebee" class="javax.swing.JTextField" binding="nachnameText">
         <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -50,7 +50,7 @@
       </component>
       <component id="92368" class="javax.swing.JLabel" binding="nachname">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Arial Black" size="16" style="1"/>
@@ -59,7 +59,7 @@
       </component>
       <component id="f0231" class="javax.swing.JButton" binding="aufnehmenButton" default-binding="true">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="2" row-span="1" col-span="3" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <borderPainted value="false"/>
@@ -72,16 +72,16 @@
       </component>
       <component id="948f2" class="javax.swing.JLabel" binding="patient2">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Arial Black" size="16" style="1"/>
-          <text value="nächster aPatient:"/>
+          <text value="nächster Arztpatient:"/>
         </properties>
       </component>
       <component id="cb4f" class="javax.swing.JTextField" binding="nextPatientA">
         <constraints>
-          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -91,7 +91,7 @@
       </component>
       <component id="b0d5d" class="javax.swing.JButton" binding="aufrufenButton" default-binding="true">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="2" row-span="1" col-span="3" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <borderPainted value="false"/>
@@ -103,27 +103,22 @@
       </component>
       <hspacer id="97ba3">
         <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <hspacer id="f9266">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <vspacer id="24fe4">
-        <constraints>
-          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
       <vspacer id="a2cf">
         <constraints>
-          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="3" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <component id="45dbb" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <doubleBuffered value="false"/>
@@ -136,33 +131,37 @@
       </component>
       <component id="2c28b" class="javax.swing.JCheckBox" binding="arztCheckBox" default-binding="true">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Arzt"/>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="false"/>
+          <text value="Arztbesuch"/>
         </properties>
       </component>
       <component id="6cd07" class="javax.swing.JCheckBox" binding="blutCheckBox">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="false"/>
           <selected value="false"/>
-          <text value="Blut"/>
+          <text value="Blutabnahme"/>
         </properties>
       </component>
       <component id="ae032" class="javax.swing.JLabel">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Arial Black" size="16" style="1"/>
-          <text value="nächster bPatient:"/>
+          <text value="nächste Blutabnahme:"/>
         </properties>
       </component>
       <component id="31579" class="javax.swing.JTextField" binding="nextPatientB">
         <constraints>
-          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -172,18 +171,68 @@
       </component>
       <component id="bef7d" class="javax.swing.JCheckBox" binding="blutListeCheckBox" default-binding="true">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <contentAreaFilled value="false"/>
           <text value="Blut Liste"/>
         </properties>
       </component>
       <component id="e41e5" class="javax.swing.JCheckBox" binding="arztListeCheckBox" default-binding="true">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <contentAreaFilled value="false"/>
           <text value="Arzt Liste"/>
+        </properties>
+      </component>
+      <component id="dd23e" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="9" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <icon value="bloodpack.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d2186" class="javax.swing.JButton" binding="button2" default-binding="true">
+        <constraints>
+          <grid row="1" column="6" row-span="9" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="false"/>
+          <icon value="Arzt.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e8599" class="javax.swing.JButton" binding="button3" default-binding="true">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1bf6d" class="javax.swing.JButton" binding="button4" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="false"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e482a785-40e1-4889-9923-158375e3ea71" name="Changes" comment="">
+    <list default="true" id="e482a785-40e1-4889-9923-158375e3ea71" name="Changes" comment="keine Doppelnamen und umlaute :)">
+      <change afterPath="$PROJECT_DIR$/src/Arzt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Siren.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bloodpack.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Praxis.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Praxis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +82,19 @@
       <option name="presentableId" value="Default" />
       <updated>1699359124582</updated>
     </task>
+    <task id="LOCAL-00001" summary="keine Doppelnamen und umlaute :)">
+      <option name="closed" value="true" />
+      <created>1701621996541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701621996541</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="keine Doppelnamen und umlaute :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="keine Doppelnamen und umlaute :)" />
   </component>
 </project>

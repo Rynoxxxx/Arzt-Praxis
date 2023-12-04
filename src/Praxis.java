@@ -22,6 +22,10 @@ public class Praxis {
     private JTextField nextPatientB;
     private JCheckBox blutListeCheckBox;
     private JCheckBox arztListeCheckBox;
+    private JButton button1;
+    private JButton button2;
+    private JButton button3;
+    private JButton button4;
 
     public Praxis(){
 
@@ -33,7 +37,7 @@ public class Praxis {
             public void actionPerformed(ActionEvent e) {
                 String nachname = nachnameText.getText();
                 String name = nameText.getText();
-                if(nachname.matches("^[A-Za-z]+$") && name.matches("^[A-Za-z]+$")){
+                if(nachname.matches("^[\\p{L}\\p{M}A-Za-z]+$") && name.matches("^[\\p{L}\\p{M}A-Za-z]+$")){//lässt nur Buchstaben von a bis z im kästchen zu p{L} lässt jeden sonderbuchstaben in jeder sprache zu, und p{M} jede modifikation, wie aktzete
                     aufnehmen();
                     nachnameText.setText("");
                     nameText.setText("");
