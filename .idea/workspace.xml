@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e482a785-40e1-4889-9923-158375e3ea71" name="Changes" comment="keine Doppelnamen und umlaute :)">
-      <change afterPath="$PROJECT_DIR$/src/Arzt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Siren.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bloodpack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Praxis.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Praxis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Praxis.java" afterDir="false" />
@@ -39,15 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/samuel.stroot/IdeaProjects/Arzt-Praxis/src"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samuel.stroot\IdeaProjects\Arzt-Praxis\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samuel.stroot\IdeaProjects\Arzt-Praxis\src" />
       <recent name="C:\Users\samue\IdeaProjects\Arzt-Praxis\src" />
     </key>
   </component>

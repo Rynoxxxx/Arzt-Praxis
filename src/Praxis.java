@@ -8,6 +8,7 @@ public class Praxis {
 
     Queue <Patient>bSchlange;
     Queue <Patient>aSchlange;
+    Stack <Patient>Rechnungen;
     private JPanel arzt;
     private JTextField nameText;
     private JTextField nachnameText;
@@ -26,11 +27,14 @@ public class Praxis {
     private JButton button2;
     private JButton button3;
     private JButton button4;
+    private JTextField rechnungenFeld;
+    private JButton a1RechnungVomStapelButton;
 
     public Praxis(){
 
         aSchlange= new Queue<Patient>();
         bSchlange= new Queue<Patient>();
+        Rechnungen= new Stack<Patient>();
 
         aufnehmenButton.addActionListener(new ActionListener() {
             @Override
@@ -65,6 +69,19 @@ public class Praxis {
 
         });
 
+        a1RechnungVomStapelButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!Rechnungen.isEmpty()) {
+                    Rechnungen.pop();
+                    if (!Rechnungen.isEmpty()) {
+                        rechnungenFeld.setText(Rechnungen.top().getName() + ", " + Rechnungen.top().getVorname());
+                    }else rechnungenFeld.setText("");
+                }
+
+
+            }
+        });
     }
     public void aufnehmen() {
         Patient pPatient=new Patient(nachnameText.getText(),nameText.getText());
@@ -93,13 +110,17 @@ public class Praxis {
 
     public Patient aufrufen() {
         if(blutListeCheckBox.isSelected()){
-        bSchlange.dequeue();
+        Rechnungen.push(bSchlange.front());
+        rechnungenFeld.setText(Rechnungen.top().getName()+", "+Rechnungen.top().getVorname());
+            bSchlange.dequeue();
         if (!bSchlange.isEmpty()){
             nextPatientB.setText(bSchlange.front().getName()+", "+bSchlange.front().getVorname());
         }else nextPatientB.setText("");
         blutListeCheckBox.setSelected(false);
         }
         if(arztListeCheckBox.isSelected()){
+            Rechnungen.push(aSchlange.front());
+            rechnungenFeld.setText(Rechnungen.top().getName()+", "+Rechnungen.top().getVorname());
             aSchlange.dequeue();
             if (!aSchlange.isEmpty()){
                 nextPatientA.setText(aSchlange.front().getName()+", "+aSchlange.front().getVorname());
